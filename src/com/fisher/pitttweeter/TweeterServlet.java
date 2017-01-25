@@ -26,9 +26,12 @@ public class TweeterServlet extends HttpServlet {
             	// invalid tweet, respond with error
             	// user should hopefully never see this
             }
-            // tweeting
-            twitter.updateStatus(newTweet);
-            // send success response
+            else
+            {
+           		// tweeting
+            	twitter.updateStatus(newTweet);
+            	// send success response
+            }
         }
         catch(TwitterException te)
         {

@@ -8,5 +8,11 @@ $(document).ready(function(){
         else{
             $("#count").css("color","#000000");
         }
+        if(characters > 0){
+        	$("#submit").removeAttr("disabled");
+        }
+        else{
+        	$("#submit").attr("disabled", "disabled");
+        }
     })
 })
