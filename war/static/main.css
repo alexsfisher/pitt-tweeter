@@ -38,6 +38,19 @@ Add top margin only when stacked */
     }     
 }
 
+/* Form */
+
+textarea{
+    resize: none;
+}
+
+button[type="submit"]{
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+    width:50%;
+}
+
 /* Misc elements */
 
 #count{
@@ -48,8 +61,4 @@ Add top margin only when stacked */
     max-width: 1000px;
     margin-left:auto;
     margin-right:auto;
-}
-
-textarea{
-    resize: none;
 }
