@@ -23,7 +23,7 @@
 </head>
 <body>
     <!-- Navbar - collapses on mobile devices -->
-    <nav class="navbar navbar-inverse">
+    <nav class="navbar navbar-custom">
       <div class="container-fluid">
         <div class="navbar-header">
           <!-- Hamburger menu on mobile -->
@@ -45,17 +45,24 @@
       </div>
     </nav>
     
-    <!-- Tweet Form -->
+    <!-- Tweet Form and Feed -->
     <div class="container">
       <div class="jumbotron">
-        <form action="http://localhost:8888/post-tweet" method="post">
-          <div class="form-group">
-            <label for="text">Tweet Text</label>
-            <label id="count">0/140</label>
-            <textarea name="text" id="text" class="form-control" maxlength="140"></textarea>
+        <div class="row">
+          <div class="col-sm-6">    
+            <form action="http://localhost:8888/post-tweet" method="post">
+              <div class="form-group">
+                <label for="text">Tweet Text</label>
+                <label id="count">0/140</label>
+                <textarea name="text" id="text" class="form-control" maxlength="140" rows="3"></textarea>
+              </div>
+              <button type="submit" id="submit" class="btn btn-primary" disabled>Submit Tweet</button>
+            </form>
           </div>
-          <button type="submit" id="submit" class="btn btn-primary" disabled>Submit Tweet</button>
-        </form>
+          <div class="col-sm-6">
+            <a class="twitter-timeline" href="https://twitter.com/PittTweeter">Tweets by PittTweeter</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+          </div>
+        </div>
       </div>
     </div>
 

@@ -1,9 +1,55 @@
+/* Custom Navbar */
+
+.navbar-custom{
+    background-color: #337AB7;
+}
+
+.navbar-custom a{
+    color:lightgray; 
+}
+
+.nav > li > a:hover,
+.nav > li > a:focus{
+    color:white;
+    background-color: #337AB7;
+}
+
+li.active > a,
+li.active > a:hover,
+li.active > a:focus{
+    color:white;
+    background-color: #286192;
+}
+
+.icon-bar{
+    background-color: lightgray;
+}
+
+/* Tweet page spacing on columns
+Add top margin only when stacked */
+
+.col-sm-6 + .col-sm-6{
+    margin-top: 5%;
+}
+
+@media (min-width: 768px) {
+  .col-sm-6 + .col-sm-6{
+    margin-top:0;
+    }     
+}
+
+/* Misc elements */
+
 #count{
 	float:right;
 }
 
 .jumbotron{
-    max-width: 768px;
+    max-width: 1000px;
     margin-left:auto;
     margin-right:auto;
+}
+
+textarea{
+    resize: none;
 }
