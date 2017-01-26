@@ -14,5 +14,5 @@ $(document).ready(function(){
         else{
         	$("#submit").attr("disabled", "disabled");
         }
-    })
-})
+    });
+});
