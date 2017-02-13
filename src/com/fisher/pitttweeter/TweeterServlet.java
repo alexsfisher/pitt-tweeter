@@ -1,6 +1,7 @@
 package com.fisher.pitttweeter;
 
 import java.io.IOException;
+import java.io.PrintWriter;
 import javax.servlet.http.*;
 import twitter4j.*;
 import twitter4j.conf.ConfigurationBuilder;
@@ -9,6 +10,7 @@ import twitter4j.conf.ConfigurationBuilder;
 public class TweeterServlet extends HttpServlet {
 	@Override
 	public void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException {
+		PrintWriter res = response.getWriter();
 		try 
         {
             // configuring twitter4j
@@ -25,19 +27,24 @@ public class TweeterServlet extends HttpServlet {
             {
             	// invalid tweet, respond with error
             	// user should hopefully never see this
+            	res.write("Error sending Tweet");
+            	res.flush();
             }
             else
             {
            		// tweeting
             	twitter.updateStatus(newTweet);
             	// send success response
+            	res.write("Tweet sent successfuly!");
+            	res.flush();
             }
         }
         catch(TwitterException te)
         {
             te.printStackTrace();
             System.out.println("Twitter4j Error: " + te.getMessage());
-            System.exit(-1);
+        	res.write("Error sending Tweet");
+        	res.flush();
         }
 	}
 }

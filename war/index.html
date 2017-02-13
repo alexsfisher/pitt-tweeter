@@ -19,6 +19,7 @@
     
     <!-- Custom JQuery/JS Files --> 
     <script src="static/count.js"></script>
+    <script src="static/post.js"></script>
     
 </head>
 <body>
@@ -51,13 +52,13 @@
       <div class="jumbotron">
         <div class="row">
           <div class="col-sm-6">    
-            <form action="http://localhost:8888/post-tweet" method="post">
+            <form>
               <div class="form-group">
                 <label for="text">Tweet Text</label>
                 <label id="count">0/140</label>
                 <textarea name="text" id="text" class="form-control" maxlength="140" rows="3"></textarea>
               </div>
-              <button type="submit" id="submit" class="btn btn-primary" disabled>Submit Tweet</button>
+              <button type="button" id="submit" class="btn btn-primary" disabled>Submit Tweet</button>
             </form>
           </div>
           <div class="col-sm-6">

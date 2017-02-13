@@ -44,7 +44,7 @@ textarea{
     resize: none;
 }
 
-button[type="submit"]{
+#submit{
     display:block;
     margin-left:auto;
     margin-right:auto;
