@@ -2,6 +2,7 @@
 
 .navbar-custom{
     background-color: #337AB7;
+    border-radius:0;
 }
 
 .navbar-custom a{

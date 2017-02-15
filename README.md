@@ -1,4 +1,6 @@
 # pitt-tweeter
-Twitter Bot running on Google App Engine
+Twitter Bot running on Google App Engine Java
 
-Under Developement
+Built with Twitter4J, Bootstrap, and JQuery
+
+http://pitt-tweeter.appspot.com/
