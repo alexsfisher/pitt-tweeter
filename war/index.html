@@ -41,7 +41,7 @@
           <!-- nav elements -->
           <ul class="nav navbar-nav">
             <li class="active"><a href="index.html">Home</a></li>
-            <li><a href="#">About</a></li>
+            <li><a href="about.html">About</a></li>
           </ul>
         </div>
       </div>
@@ -49,12 +49,19 @@
     
     <!-- Tweet Form and Feed -->
     <div class="container">
-      <div class="jumbotron">
+      <div class="content-box">
         <div class="row">
-          <div class="col-sm-6">    
+          <div class="col-sm-6">
+            <div class="panel panel-warning">
+                <div class="panel-heading"><h4 class="panel-title text-center">Warning</h4></div>
+                <div class="panel-body">
+                    This account is public. Do not post any private or personal information.
+                    Tweets may be moderated if necessary.
+                </div>
+            </div>
             <form>
               <div class="form-group">
-                <label for="text">Tweet Text</label>
+                <label for="text">Tweet</label>
                 <label id="count">0/140</label>
                 <textarea name="text" id="text" class="form-control" maxlength="140" rows="3"></textarea>
               </div>
@@ -67,6 +74,8 @@
         </div>
       </div>
     </div>
-
+    
+    <footer>&copy; 2017 Alex Fisher</footer>
+    
 </body>
 </html>

@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>Pitt Tweeter</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" type="text/css" href="static/main.css">
+    
+    <!-- Boostrap core JS and JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    
+    <!-- Custom JQuery/JS Files --> 
+    <script src="static/count.js"></script>
+    <script src="static/post.js"></script>
+    
+</head>
+<body>
+    <!-- Navbar - collapses on mobile devices -->
+    <nav class="navbar navbar-custom">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <!-- Hamburger menu on mobile -->
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>                        
+          </button>
+          <!-- <a class="navbar-brand" href="#">Pitt Tweeter</a> -->
+          <img id="brand-image" src="static/panther_transparent.png" height="50px">
+        </div>
+        <!-- collecting all elements to collapse -->
+        <div class="collapse navbar-collapse" id="navbar">
+          <!-- nav elements -->
+          <ul class="nav navbar-nav">
+            <li><a href="index.html">Home</a></li>
+            <li class="active"><a href="about.html">About</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    
+    <!-- About info -->
+    <div class="container">
+        <div class="content-box">
+            <h2>About This Project</h2>
+            <div class="lead">This website sends submitted tweets to a bot that posts them to <a href="https://twitter.com/PittTweeter">@PittTweeter</a>.</div>
+            <div class="lead">Created by Alex Fisher using:
+            <ul class="lead">
+                    <li>Google App Engine Java</li>
+                    <li>Twitter4J</li>
+                    <li>Bootstrap</li>
+                    <li>JQuery</li>
+            </ul></div>
+            <div class="lead">Source code is available on <a href="https://github.com/alexsfisher/pitt-tweeter">GitHub</a>. Feel free to contact me at <a href="mailto:panthersdev@gmail.com?Subject=Pitt%20Tweeter">panthersdev@gmail.com</a> with questions or concerns.</div>
+            <div class="lead">All Panther logos are the property of the University of Pittsburgh</div>
+        </div>
+    </div>
+    
+    <footer>&copy; 2017 Alex Fisher</footer>
+    
+</body>
+</html>
